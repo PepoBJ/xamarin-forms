@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Example1.MainPage">
+
+    <StackLayout Padding="5">
+        <!-- Place new controls here -->
+        <Label Text="Nombre:"/>
+        <Entry x:Name="TxtName" Placeholder="Enter Name"></Entry>
+        <Label Text="Correo:"/>
+        <Entry x:Name="TxtEmail" Placeholder="Enter Email"></Entry>
+        <DatePicker Format="dd/MM/yyyy" x:Name="DatePicker" TextColor="SteelBlue"></DatePicker>
+
+        <Button Text="Save" Margin="5,2,5,2" 
+                Clicked="Button_Clicked" 
+                CornerRadius="4" 
+                BorderColor="Maroon" BorderWidth="1"></Button>
+
+        <ActivityIndicator x:Name="Indicator" Color="Peru" HeightRequest="50"></ActivityIndicator>
+
+        <Editor HeightRequest="100"></Editor>
+
+        <BoxView HeightRequest="200" WidthRequest="200" Color="Chocolate"></BoxView>
+    </StackLayout>
+
+</ContentPage>
