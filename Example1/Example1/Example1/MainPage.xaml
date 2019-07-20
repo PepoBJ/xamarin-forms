@@ -24,6 +24,8 @@
         <Editor HeightRequest="100"></Editor>
 
         <BoxView HeightRequest="200" WidthRequest="200" Color="Chocolate"></BoxView>
+
+        <Image Source="car.png"></Image>
     </StackLayout>
 
 </ContentPage>
